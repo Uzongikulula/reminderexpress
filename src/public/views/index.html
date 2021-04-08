@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Calander</title>
+  <link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+
+  <div class="bodyCon">
+    <div class="svgCon">
+      <img src="../image/logo.svg" alt="Email" class="logoSVG">
+      <p class="slogan">Reminder Express makes your life easier.</p>
+      <img src="../image/email.svg" alt="Email" class="emailSVG">
+      <!-- <p class="slogan">Reminder Express makes your life easier.</p> -->
+    </div>
+
+
+    <div class="formCon">
+      <form action="http://localhost:3000/events" method="POST">
+        <label for="attendee email" class="titleText">Attendee email</label>
+        <input type="email" name="to" placeholder="send email to...">
+        <label for="event title" class="titleText">Event Title</label>
+        <input type="text" name="summary" placeholder="the title of event...">
+        <label for="body" class="titleText">Event body</label>
+        <input type="text" name="description" placeholder="the message body...">
+  
+        <label for="startTime" class="titleText">Start Time:</label>
+        <input type="datetime-local" name="startTime" id="startTime"></br>
+        <label for="endTime" class="titleText">End Time:</label>
+        <input type="datetime-local" name="endTime" id="endTime">
+        
+        <input type="submit" value="Send Event Invite">
+      </form>
+    </div>
+
+  </div>
+
+  </div>
+</body>
+</html>
